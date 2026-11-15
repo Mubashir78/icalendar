@@ -308,6 +308,9 @@ norecursedirs = [
 ]
 filterwarnings = [
     "ignore::DeprecationWarning",
+    # Issue #1868: the guessed TZIDs in the test data are known and their
+    # handling is covered by tests that expect the warning (pytest.warns).
+    "ignore::icalendar.error.GloballyUniqueTZIDGuessed",
 ]
 
 [tool.towncrier]

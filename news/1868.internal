@@ -1,0 +1,1 @@
+The pytest test configuration now ignores the ``GloballyUniqueTZIDGuessed`` warning when it is emitted by test data that intentionally contains vendor-prefixed TZIDs. The warning behaviour itself is unchanged and remains covered by tests that expect the warning, so the test output is no longer cluttered by it. See issue #1868.
